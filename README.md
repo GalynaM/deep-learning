@@ -26,6 +26,7 @@
   - Adding more neurons to a hidden layer.
   - Adding more hidden layers.
   - Using different activation functions for the hidden layers.
+* Model saved and exported to HDF5 file - AlphabetSoupCharity_Optimization.h5.
 
 ### Charity Funding Predictor Report.pdf
 * This is a Report on the Neural Network Model.
