@@ -5,18 +5,29 @@
 
 ### Tools used:
 * Pandas and the Scikit-Learn.
-* Leaflet JavaScript library to build interactive Maps.
+* TensorFlow to design a neural network.
 
-### Preprocess Data
-* 
-* Data markers reflect the magnitude of the earthquake by their size and and depth of the earthquake by color.
-* Popups provide additional information about the earthquake when a marker is clicked.
-* A legend that provide context for map data.
+### Starter_Code.ipynb
 
-### Compile, Train, and Evaluate the Model
-* Plots a second data set on a map additional to earchquakes to illustrate the relationship between tectonic plates and seismic activity.
-* Data on tectonic plates was taken from https://github.com/fraxen/tectonicplates.
-* A number of base maps to choose from, two different data sets separated into overlays that can be turned on and off independently.
+#### Data Preprocessing
+* Defined the target(s)/feature(s) variable(s) for the model.
+* Droped non significant columns, reduced data by binning rare values.
+* Categorical variables encoded using pd.get_dummies(). 
 
+#### Model Compilation, Training, and Evaluation
+* A neural network created via TensorFlow Keras with defined hidden layers, output layer and appropriate activation functions.
+* Model saved and exported to HDF5 file - AlphabetSoupCharity.h5.
+
+### AlphabetSoupCharity_Optimization.ipynb
+
+#### Model Optimization 
+* In order to achieve a target predictive accuracy higher than 75%, model was optimized using all of the following:
+  - Adjusting the input data.
+  - Adding more neurons to a hidden layer.
+  - Adding more hidden layers.
+  - Using different activation functions for the hidden layers.
+
+### Charity Funding Predictor Report.pdf
+* This is a Report on the Neural Network Model.
 
 Please note a1, a2, a3 are just folders where tuned models data were stored
